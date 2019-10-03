@@ -1,0 +1,18 @@
+theta2 3.892 -0.7505
+theta3 7.522 1.902
+
+1UOA-UPF
+theta2 3.158  2.906
+theta3 3.072  2.595
+
+2AOA-UPF
+theta2  3.008 2.597
+theta3  3.733 2.785
+
+3AOA-2PF
+theta2  2.993  2.954
+theta3  3.465  2.536
+
+4APA-3PF
+theta2  2.992  2.955
+theta3  3.523  2.508

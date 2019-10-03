@@ -1,0 +1,54 @@
+load QALL1;
+load QALL2;
+load QALL3;
+load QALL4;
+
+%ZXP UOA_AOA
+figure;
+plot(t,qAll1(:,2));hold on;
+plot(t,qAll2(:,2));hold on;
+plot([0,10],[qP(2),qP(2)],'r:', 'LineWidth',2.5);
+plot([0,10],[qM(2),qM(2)],'r--', 'LineWidth',1.5);
+%axis([0 10 -2.5 2.5]);
+title('UOA_AOA theta2 with physical constrains');
+xlabel('t (Second)');
+ylabel('angle (Rad)');
+legend('UOA T2','AOA T2','max','min');
+
+figure;
+plot(t,qAll1(:,3));hold on;
+plot(t,qAll2(:,3));hold on;
+plot([0,10],[qP(3),qP(3)],'r:', 'LineWidth',2.5);
+plot([0,10],[qM(3),qM(3)],'r--', 'LineWidth',1.5);
+%axis([0 10 -2.5 2.5]);
+title('UOA_AOA theta2 with physical constrains');
+xlabel('t (Second)');
+ylabel('angle (Rad)');
+legend('UOA T2','AOA T2','max','min');
+
+%ZXP UPF_2PF_3PF
+figure(4);
+plot(t,qAll(:,2));hold on;
+plot([0,10],[qP(2),qP(2)],'r:', 'LineWidth',2.5);
+plot([0,10],[qM(2),qM(2)],'r--', 'LineWidth',1.5);
+%axis([0 10 -2.5 2.5]);
+title('Simulated theta2 with physical constrains');
+xlabel('t (Second)');
+ylabel('angle (Rad)');
+legend('The2','max','min');
+
+max2 = max(qAll(:,2))
+min2 = min(qAll(:,2))
+
+figure(5);
+plot(t,qAll(:,3));hold on;
+plot([0,10],[qP(3),qP(3)],'r:', 'LineWidth',2.5);
+plot([0,10],[qM(3),qM(3)],'r--', 'LineWidth',1.5);
+%axis([0 10 -2.5 2.5]);
+title('Simulated theta3 with physical constrains');
+xlabel('t (Second)');
+ylabel('angle (Rad)');
+legend('The3','max','min');
+
+max3 = max(qAll(:,3))
+min3 = min(qAll(:,3))
